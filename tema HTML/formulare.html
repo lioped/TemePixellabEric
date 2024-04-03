@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tema Formulare</title>
+  </head>
+
+  <body>
+    <h2>HTML Forms</h2>
+    <form a method="get"> 
+      <label for="name">Enter your name:</label>
+      <input
+        type="text"
+        name="numele intreg"
+        id="name"
+        placeholder="Allen Smith"
+        
+      />
+      <br />
+      <label for="email">Enter your email:</label>
+      <input type="email" name="email" id="email" placeholder="abc@gmail.com" />
+      <br />
+      <label for="password">Enter a password:</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        maxlength="10"
+        min="2"
+        
+        placeholder="Ex:qwerty123"
+      />
+      <br />
+      <br />
+      <label for="sex">Choose your sex:</label>
+      <select name="sex" id="sex">
+        <option value="M">Masculin</option>
+        <option value="F">Feminin</option>
+        <option value="NA">NA</option>
+      </select>
+
+      <br />
+      <br />
+
+      <!-- <label for="date">Your birthday:</label>
+      <input type="date" name="date" id="dat"  /> -->
+
+      <br />
+      <br />
+
+      <label for="select">Choose your favorite pet:</label>
+
+      <select name="pet" id="select">
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="parrot">Parrot</option>
+      </select>
+
+      <br />
+      <br />
+
+      <label for="locatie">Choose your country:</label>
+      <input type="radio" name="locatie" value="Romania" id="romania" />
+      <label for="romania">Romania</label>
+      <input type="radio" name="locatie" value="Spain" id="spania" />
+      <label for="spania">Spania</label>
+      <input type="radio" name="locatie" value="Italy" id="italia" />
+      <label for="italia">Italy</label>
+
+      <br />
+      <br />
+
+      <br />
+      <br />
+      <label for="hobby">Choose your hobby:</label>
+      <input type="checkbox" name="hobby" value="coding" id="coding" />
+      <label for="coding">Coding</label>
+      <input type="checkbox" name="hobby" value="surfing" id="surfing" />
+      <label for="surfing">Surfing</label>
+      <input type="checkbox" name="hobby" value="reading" id="reading" />
+      <label for="reading">Reading</label>
+
+      <br />
+      <br />
+
+      <button type="submit">submit</button>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<form method="get">
+  <label for="nume">Nume</label><br />
+  <input minlength="2" name="nume" placeholder="nume" type="text" id="nume" />
+  <br />
+  <label for="pass">Parola</label><br />
+  <input
+    maxlength="2"
+    name="parola"
+    placeholder="parola"
+    type="password"
+    id="pass"
+  />
+  <br />
+  <label for="age">Varsta</label><br />
+  <input name="varsta" placeholder="varsta" type="number" id="age" /> <br />
+  <br />
+
+  <select name="sex" id="sex">
+    <option value="m">barbat</option>
+    <option value="f">femeie</option>
+    <option value="na">N/A</option>
+  </select>
+  <br />
+
+  <input type="radio" name="persFizica" value="companii" id="pf-comp" />
+  <label for="pf-comp"> Companie </label> <br />
+  <input type="radio" name="persFizica" value="IMM" id="pf-imm" />
+  <label for="pf-imm">Pers fizica autorizata / SRL Micro </label><br />
+  <input type="radio" name="persFizica" value="om" id="pf-pf" />
+  <label for="pf-pf">Persoana Fizica</label> <br />
+
+  <br />
+  <input type="checkbox" name="domiciliuRo" /> Stabilit in Ro <br />
+
+  <button type="Submit">Submit Button</button>
+</form>
