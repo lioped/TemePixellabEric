@@ -126,3 +126,30 @@ let slicesForEachFrind = (slicesPizza - (slicesPizza % friends)) / friends;
 let SlicesLeft = slicesPizza % friends;
 console.log(`Each friend will get ${slicesForEachFrind} slices.`);
 console.log(`The number of slices of pizza left will be ${SlicesLeft}.`);
+
+// tema 02 JS
+
+// Laurentiu a luat 85% din punctajul maxim la bacalaureat la limba Romana. Are nevoie de nota "5" ca sa treaca in sistemul romanesc de invatamant. A trecut examenul?
+
+let notaMaxima = 10;
+let procentNotaLaurentiu = 0.85;
+let notaMinimaTrecere = "5";
+
+let notaExactaLaurentiu = notaMaxima * procentNotaLaurentiu;
+let aTrecutExamenulLaurentiu = notaExactaLaurentiu >= notaMinimaTrecere;
+console.log(aTrecutExamenulLaurentiu);
+console.log(
+  `Laurentiu are nota ${notaExactaLaurentiu} la lb Romana, fiind mare decat minimul ${notaMinimaTrecere}, care este de trecere.`
+);
+
+// vrem sa facem un zid pe o latime de 4 metri, folosind caramizi de 1 metru latime. Daca avem 17 caramizi, vom putea avea ultimul nivel complet?
+let zidLatime = 4;
+let caramideLatime = 1;
+let nrCaramizi = 17;
+let caramiziPerLevel = zidLatime / caramideLatime;
+let cateNiveleSuntFull =
+  (nrCaramizi - (nrCaramizi % caramiziPerLevel)) / caramiziPerLevel;
+console.log(cateNiveleSuntFull);
+let cateCaramiziAuMaiRamas = nrCaramizi % cateNiveleSuntFull;
+let UltmiulNivel = cateCaramiziAuMaiRamas === 0;
+console.log(UltmiulNivel);
