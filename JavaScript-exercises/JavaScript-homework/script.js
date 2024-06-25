@@ -1,5 +1,6 @@
 "use strict";
 
+/*
 //ex 1
 let apples = 10;
 let givenApples = 3;
@@ -32,8 +33,7 @@ console.log(`The distance will be ${distanceCover} km.`);
 
 let totalCandies = 25;
 let numberOfFriends = 4;
-let candiesPerFriend =
-  (totalCandies - (totalCandies % numberOfFriends)) / numberOfFriends;
+let candiesPerFriend = (totalCandies - (totalCandies % numberOfFriends)) / numberOfFriends;
 let remainingCandies = totalCandies % numberOfFriends;
 console.log(`Each friend get ${candiesPerFriend} candies.`);
 console.log(`Candies left over: ${remainingCandies}.`);
@@ -85,14 +85,10 @@ console.log(`The double amount will be ${doubleAmount} $.`);
 //ex 14
 let totalStudents = 45;
 let numberOfStudentsInAGroup = 6;
-let totalGroups =
-  (totalStudents - (totalStudents % numberOfStudentsInAGroup)) /
-  numberOfStudentsInAGroup;
+let totalGroups = (totalStudents - (totalStudents % numberOfStudentsInAGroup)) / numberOfStudentsInAGroup;
 let remainingStudents = totalStudents % numberOfStudentsInAGroup;
 console.log(`It will be ${totalGroups} groups`);
-console.log(
-  `The number of studens left wihout a group will be ${remainingStudents}.`
-);
+console.log(`The number of studens left wihout a group will be ${remainingStudents}.`);
 
 //ex 15
 let oneHour = 60;
@@ -103,9 +99,7 @@ console.log(`In 3 hours will be ${threeHours} minutes.`);
 let oneBatch = 2;
 let fiveBatchs = 5;
 let totalCups = oneBatch * fiveBatchs;
-console.log(
-  `The number of cups for 5 batches will be: ${totalCups} cups fo flour.`
-);
+console.log(`The number of cups for 5 batches will be: ${totalCups} cups fo flour.`);
 
 //ex 17
 let bookPages = 300;
@@ -138,18 +132,68 @@ let notaMinimaTrecere = "5";
 let notaExactaLaurentiu = notaMaxima * procentNotaLaurentiu;
 let aTrecutExamenulLaurentiu = notaExactaLaurentiu >= notaMinimaTrecere;
 console.log(aTrecutExamenulLaurentiu);
-console.log(
-  `Laurentiu are nota ${notaExactaLaurentiu} la lb Romana, fiind mare decat minimul ${notaMinimaTrecere}, care este de trecere.`
-);
+console.log(`Laurentiu are nota ${notaExactaLaurentiu} la lb Romana, fiind mare decat minimul ${notaMinimaTrecere}, care este de trecere.`);
 
 // vrem sa facem un zid pe o latime de 4 metri, folosind caramizi de 1 metru latime. Daca avem 17 caramizi, vom putea avea ultimul nivel complet?
 let zidLatime = 4;
 let caramideLatime = 1;
 let nrCaramizi = 17;
 let caramiziPerLevel = zidLatime / caramideLatime;
-let cateNiveleSuntFull =
-  (nrCaramizi - (nrCaramizi % caramiziPerLevel)) / caramiziPerLevel;
+let cateNiveleSuntFull = (nrCaramizi - (nrCaramizi % caramiziPerLevel)) / caramiziPerLevel;
 console.log(cateNiveleSuntFull);
 let cateCaramiziAuMaiRamas = nrCaramizi % cateNiveleSuntFull;
 let UltmiulNivel = cateCaramiziAuMaiRamas === 0;
 console.log(UltmiulNivel);
+
+*/
+
+// tema JS04 Logic & Logical Operators
+
+// ex 1
+// scenariu 1
+// let xEx1 = 3;
+
+// scenariu 2
+let xEx1 = 6;
+
+const lunaCurentaEx1 = xEx1;
+const lunaInCarePotiVota = 6;
+const SePoateVotaAcum = lunaCurentaEx1 === lunaInCarePotiVota;
+console.log(SePoateVotaAcum);
+
+// ex 2
+
+// scenariul 1
+// let yEx2 = 2010;
+
+// scenariul 2
+let yEx2 = 1990;
+
+const dataNastereWanda = yEx2;
+const varstaMinimaVot = 18;
+const anCurent = 2024;
+const varstaWanda = anCurent - dataNastereWanda;
+const poateSaVotezeWanda = varstaWanda >= varstaMinimaVot;
+console.log(poateSaVotezeWanda);
+
+// ex 3
+// scenariul 1
+// let xEx3 = 3;
+// let yEx3 = 2010;
+
+// scenariul 2
+// let xEx3 = 6;
+// let yEx3 = 2010;
+
+// scenariul 3
+let xEx3 = 6;
+let yEx3 = 1990;
+
+const lunaInCareSeTineVotarea = 6;
+const lunaCurenta = xEx3;
+const dataDeNastereOlek = yEx3;
+const anulCurent = 2024;
+const varstaLaCarePotiVota = 18;
+const VarstaLuiOlek = anulCurent - dataDeNastereOlek;
+const poateSaVoetezeOlek = VarstaLuiOlek >= varstaLaCarePotiVota && lunaCurenta === lunaInCareSeTineVotarea;
+console.log(poateSaVoetezeOlek);
