@@ -154,12 +154,12 @@ console.log(UltmiulNivel);
 // let xEx1 = 3;
 
 // scenariu 2
-let xEx1 = 6;
+// let xEx1 = 6;
 
-const lunaCurentaEx1 = xEx1;
-const lunaInCarePotiVota = 6;
-const SePoateVotaAcum = lunaCurentaEx1 === lunaInCarePotiVota;
-console.log(SePoateVotaAcum);
+// const lunaCurentaEx1 = xEx1;
+// const lunaInCarePotiVota = 6;
+// const SePoateVotaAcum = lunaCurentaEx1 === lunaInCarePotiVota;
+// console.log(SePoateVotaAcum);
 
 // ex 2
 
@@ -167,14 +167,14 @@ console.log(SePoateVotaAcum);
 // let yEx2 = 2010;
 
 // scenariul 2
-let yEx2 = 1990;
+// let yEx2 = 1990;
 
-const dataNastereWanda = yEx2;
-const varstaMinimaVot = 18;
-const anCurent = 2024;
-const varstaWanda = anCurent - dataNastereWanda;
-const poateSaVotezeWanda = varstaWanda >= varstaMinimaVot;
-console.log(poateSaVotezeWanda);
+// const dataNastereWanda = yEx2;
+// const varstaMinimaVot = 18;
+// const anCurent = 2024;
+// const varstaWanda = anCurent - dataNastereWanda;
+// const poateSaVotezeWanda = varstaWanda >= varstaMinimaVot;
+// console.log(poateSaVotezeWanda);
 
 // ex 3
 // scenariul 1
@@ -199,7 +199,7 @@ console.log(poateSaVotezeWanda);
 // console.log(poateSaVoetezeOlek);
 
 // Tema JS05
-
+/*
 console.log(false || (0 && "Hello")); // output 0
 console.log(("Text" && 42) || null); // output 42
 console.log(0 || (undefined && true)); // output undefined
@@ -209,23 +209,26 @@ console.log(100 || (0 && null)); // output 100
 console.log((null && "value") || 50); // output 50
 console.log((true && "") || "fallback"); // output fallback
 console.log("yes" || (false && 0)); // output yes
-
+*/
 // Exercitiu If else
 
 // ex
-let x = 6;
-// let x = 30;
-// let x = 10;
-// let x = 12;
-// let x = 22;
-// let x = 8;
 
-if (x % 3 === 0 && x % 5 === 0) {
-  console.log("fizzbuzz");
-} else if (x % 3 === 0) {
-  console.log("fizz");
-} else if (x % 5 === 0) {
-  console.log("buzz");
-} else {
-  console.log(x);
-}
+const isDivisible = function (x) {
+  if (x % 3 === 0 && x % 5 === 0) {
+    console.log("fizzbuzz");
+  } else if (x % 3 === 0) {
+    console.log("fizz");
+  } else if (x % 5 === 0) {
+    console.log("buzz");
+  } else {
+    console.log(x);
+  }
+};
+
+isDivisible(6);
+isDivisible(30);
+isDivisible(10);
+isDivisible(12);
+isDivisible(22);
+isDivisible(8);
