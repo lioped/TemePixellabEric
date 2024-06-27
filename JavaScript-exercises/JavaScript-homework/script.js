@@ -186,14 +186,46 @@ console.log(poateSaVotezeWanda);
 // let yEx3 = 2010;
 
 // scenariul 3
-let xEx3 = 6;
-let yEx3 = 1990;
+// let xEx3 = 6;
+// let yEx3 = 1990;
 
-const lunaInCareSeTineVotarea = 6;
-const lunaCurenta = xEx3;
-const dataDeNastereOlek = yEx3;
-const anulCurent = 2024;
-const varstaLaCarePotiVota = 18;
-const VarstaLuiOlek = anulCurent - dataDeNastereOlek;
-const poateSaVoetezeOlek = VarstaLuiOlek >= varstaLaCarePotiVota && lunaCurenta === lunaInCareSeTineVotarea;
-console.log(poateSaVoetezeOlek);
+// const lunaInCareSeTineVotarea = 6;
+// const lunaCurenta = xEx3;
+// const dataDeNastereOlek = yEx3;
+// const anulCurent = 2024;
+// const varstaLaCarePotiVota = 18;
+// const VarstaLuiOlek = anulCurent - dataDeNastereOlek;
+// const poateSaVoetezeOlek = VarstaLuiOlek >= varstaLaCarePotiVota && lunaCurenta === lunaInCareSeTineVotarea;
+// console.log(poateSaVoetezeOlek);
+
+// Tema JS05
+
+console.log(false || (0 && "Hello")); // output 0
+console.log(("Text" && 42) || null); // output 42
+console.log(0 || (undefined && true)); // output undefined
+console.log(undefined && true); // output undefined
+console.log(false && "first"); // output false
+console.log(100 || (0 && null)); // output 100
+console.log((null && "value") || 50); // output 50
+console.log((true && "") || "fallback"); // output fallback
+console.log("yes" || (false && 0)); // output yes
+
+// Exercitiu If else
+
+// ex
+let x = 6;
+// let x = 30;
+// let x = 10;
+// let x = 12;
+// let x = 22;
+// let x = 8;
+
+if (x % 3 === 0 && x % 5 === 0) {
+  console.log("fizzbuzz");
+} else if (x % 3 === 0) {
+  console.log("fizz");
+} else if (x % 5 === 0) {
+  console.log("buzz");
+} else {
+  console.log(x);
+}
