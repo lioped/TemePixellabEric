@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body > * {
+  background-color: white;
+}
+
+.logo-firma {
+  width: 40px;
+  margin: 10px;
+}
+
+nav {
+  float: right;
+  margin-right: 30px;
+  margin-top: 20px;
+}
+
+nav a {
+  color: #666;
+  font-weight: bold;
+  margin: 20px;
+  text-decoration: none;
+}
+
+#menu {
+  box-shadow: 0 6px 9px #ededed;
+}
+
+.sidebar {
+  margin-top: 100px;
+  margin-left: 30px;
+  box-shadow: -11px 9px 18px 4px #ededed;
+  padding: 10;
+  width: 15vw;
+  float: left;
+}
+
+.sidebar a {
+  color: #666;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+main {
+  box-shadow: -11px 9px 18px 4px #ededed;
+  margin-top: 50px;
+  width: 60vw;
+  float: right;
+  padding: 30px;
+  margin-right: 15vw;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  margin-top: 50px;
+  box-shadow: 0 -6px 9px #ededed;
+}
+
+.clear-all-floats {
+  clear: both;
+}
+
+body {
+  position: relative;
+  height: 50vw;
+  padding-bottom: 130px;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}

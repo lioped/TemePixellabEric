@@ -1,0 +1,446 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+video {
+  max-width: 100%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  background: transparent
+    linear-gradient(to bottom, rgba(18, 18, 18, 1) 0, rgba(17, 34, 51, 1) 100%);
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+/* header */
+.flex-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2%;
+  padding-top: 1%;
+}
+
+.link-stilizare {
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.link-stilizare:hover {
+  color: orange;
+}
+
+.flex-bar ul {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  /* flex-basis: content; */
+  gap: 50px;
+  list-style: none;
+}
+
+.optiuni select {
+  width: 200px;
+  border-radius: 10px;
+  padding: 5px 5px;
+}
+
+.optiuni {
+  flex-basis: 250px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.optiuni i {
+  color: white;
+}
+
+.heading {
+  text-align: center;
+  color: white;
+}
+
+.heading h1 {
+  font-size: 50px;
+}
+
+.heading h6 {
+  opacity: 0.5;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+/* comunicat de presa */
+
+.prima-sectiune {
+  margin-bottom: 5%;
+}
+
+.presa {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+
+.col {
+  width: 100%;
+  /* height: 300px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 10px;
+
+  border: 0.5px solid gray;
+  border-radius: 9px;
+  box-shadow: 1px 1px 1px rgb(128, 128, 128);
+  /* padding: 0 30px; */
+  padding-bottom: 20px;
+}
+
+.col img {
+  grid-column: 1/ 4;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.col p {
+  grid-column: 1/ -1;
+  text-align: start;
+  padding: 0 5%;
+}
+
+.prima-sectiune h2 {
+  margin-bottom: 3%;
+}
+
+.universal-button {
+  background-color: orange;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.universal-button a {
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* Procedurii online section */
+
+.a-doua-sectiune {
+  background-color: #a5d1ec9d;
+
+  width: 100%;
+  padding: 5% 0;
+}
+
+.proceduri-online h2 {
+  margin-bottom: 4%;
+}
+
+.text-referinta {
+  margin-bottom: 20px;
+  color: #747474;
+}
+
+.text-referinta a {
+  font-weight: bold;
+  color: #456;
+}
+
+.col-online {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 15px;
+  column-gap: 45px;
+}
+
+.row-position {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* padding: 10px 15px; */
+  border-radius: 5px;
+  box-shadow: -4px 1px 20px -7px black;
+  /* gap: auto; */
+}
+
+.text-in-interior {
+  flex: 1 0;
+  margin-left: 5%;
+}
+
+.button-stilizare {
+  background-color: orange;
+  padding: 20px 15px;
+  border: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.button-stilizare i {
+  color: white;
+}
+
+/* Registratura */
+
+.a-treia-sectiune {
+  margin: 5% 0;
+}
+.registratura {
+  position: relative;
+}
+
+.registratura h2 {
+  position: absolute;
+  top: 30px;
+  left: 415px;
+  /* align-items: flex-start; */
+  /* flex: ; */
+  /* margin-bottom: 4%; */
+}
+
+.col-registratura {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  height: 20%;
+}
+
+.toate-formularele,
+.stadiu-cerere {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+}
+
+.toate-formularele,
+.stadiu-cerere span {
+  color: #778899;
+  font-weight: bold;
+}
+
+.imagine-ilustratie {
+  width: 33%;
+}
+
+/* 
+.imagine-ilustratie img {
+  max-width: 50%;
+} */
+
+/* social media section */
+
+.a-patra-sectiune {
+  background-color: #a5d1ec9d;
+  margin-bottom: 5%;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  /* gap: 70px; */
+}
+.a-patra-sectiune {
+  padding: 4% 0;
+}
+
+.a-patra-sectiune h2 {
+  padding-bottom: 3%;
+}
+
+.container-stanga {
+  max-width: 50%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+}
+
+.partea-sus {
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 5% 5%;
+}
+
+.partea-sus p {
+  font-weight: bold;
+}
+
+.container-stanga img {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.container-dreapta {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+}
+
+div video {
+  width: 400px;
+  height: 393px;
+}
+
+/* A cincea sectiune  */
+
+.a-cincea-sectiune {
+  margin: 5% 0;
+}
+
+.a-cincea-sectiune h2 {
+  margin-bottom: 2%;
+}
+
+.news-letter {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.news-letter p {
+  /* align-self: flex-start; */
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.email,
+.nume {
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #abc;
+  line-height: 1.2;
+  font-size: 12px;
+}
+
+.nume-input,
+.email-input {
+  border: 1px solid #abc;
+  color: #123;
+  border-radius: 6px;
+  padding: 3px 10px 3px;
+  box-shadow: 1px 6px 12px #cdd;
+  margin-bottom: 3%;
+}
+
+.prelucrarea-datelor {
+  margin-bottom: 5%;
+}
+
+.prelucrarea-datelor label {
+  color: #789;
+  font-weight: 500;
+}
+
+.formular button {
+  background-color: #f8a24f;
+  border-radius: 25px;
+
+  font-weight: 600;
+  padding: 13px 19px;
+  line-height: 17px;
+  font-size: 14px;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.formular button a {
+  color: #fff;
+}
+
+.news-letter img {
+  max-width: 30%;
+}
+
+/* Footer */
+footer {
+  padding: 5% 0;
+  background: transparent
+    linear-gradient(to bottom, rgba(18, 18, 18, 1) 0, rgba(17, 34, 51, 1) 100%);
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  color: #778899;
+
+  font-size: 13px;
+}
+
+.footer-flex span {
+  display: block;
+}
+
+.footer-flex a {
+  display: block;
+  color: #778899;
+}
+
+.footer-flex a:hover {
+  color: white;
+}
+
+.footer-flex h4 {
+  margin-bottom: 1rem;
+  color: #445566;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.linkuri-utile {
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.date-de-contact {
+  line-height: 1.7;
+}
