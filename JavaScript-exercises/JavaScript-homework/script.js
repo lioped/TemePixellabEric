@@ -213,7 +213,7 @@ console.log("yes" || (false && 0)); // output yes
 // Exercitiu If else
 
 // ex
-
+/*
 const isDivisible = function (x) {
   if (x % 3 === 0 && x % 5 === 0) {
     console.log("fizzbuzz");
@@ -232,3 +232,100 @@ isDivisible(10);
 isDivisible(12);
 isDivisible(22);
 isDivisible(8);
+*/
+
+// TEMA JS06
+
+// ex 1
+
+for (let i = 1; i <= 10; i++) {
+  console.log(i);
+}
+console.log("----");
+// ex 2
+
+let numar = 132;
+let cifre = [];
+
+while (numar > 0) {
+  let cifra = numar % 10;
+  // console.log(cifra);
+  cifre.push(cifra);
+  numar = (numar - cifra) / 10;
+  // console.log(numar);
+}
+
+// Afișăm cifrele în ordine inversă
+for (let i = cifre.length - 1; i >= 0; i--) {
+  console.log(cifre[i]);
+}
+console.log("---");
+
+//ex 3
+
+let numar2 = 132;
+let suma = 0;
+
+while (numar2 > 0) {
+  let cifra = numar2 % 10;
+  suma += cifra;
+  numar2 = (numar2 - cifra) / 10;
+}
+
+console.log(suma); // Rezultatul va fi 6
+console.log("---");
+// ex 4
+let numar3 = 132;
+let numarDeCifre = 0;
+
+while (numar3 > 0) {
+  numar3 = (numar3 - (numar3 % 10)) / 10;
+  numarDeCifre++;
+}
+
+console.log(numarDeCifre); // Rezultatul va fi 3
+console.log("---");
+// ex 5
+let string = "1251";
+for (let i = 0; i < string.length; i++) {
+  let cifra = string[i];
+  switch (cifra) {
+    case "1":
+      console.log("Luni");
+      break;
+    case "2":
+      console.log("Marti");
+      break;
+    case "3":
+      console.log("Miercuri");
+      break;
+    case "4":
+      console.log("Joi");
+    case "5":
+      console.log("Vineri");
+      break;
+    case "6":
+      console.log("Sambata");
+      break;
+    case "7":
+      console.log("Duminica");
+      break;
+    default:
+      console.log("Cifra nu este un numar");
+  }
+}
+console.log("---");
+// ex 6
+
+for (let i = 1; i < 100; i++) {
+  if (i % 7 === 0) {
+    console.log(i);
+  }
+}
+console.log("---");
+
+let produs = 1;
+for (let i = 1; i < 100; i++) {
+  produs *= i;
+}
+console.log(produs);
