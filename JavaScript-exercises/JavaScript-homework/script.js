@@ -237,6 +237,7 @@ isDivisible(8);
 // TEMA JS06
 
 // ex 1
+/*
 
 for (let i = 1; i <= 10; i++) {
   console.log(i);
@@ -316,12 +317,15 @@ for (let i = 0; i < string.length; i++) {
 }
 console.log("---");
 // ex 6
+let sumaTotala = 0;
 
 for (let i = 1; i < 100; i++) {
   if (i % 7 === 0) {
-    console.log(i);
+    // console.log(i);
+    sumaTotala += i;
   }
 }
+console.log(sumaTotala);
 console.log("---");
 
 let produs = 1;
@@ -329,3 +333,160 @@ for (let i = 1; i < 100; i++) {
   produs *= i;
 }
 console.log(produs);
+
+*/
+
+// Tema 08 JavaScript
+
+// ex 1
+
+let sum = 0;
+
+for (let i = 1; i <= 15; i += 2) {
+  sum += i;
+  // console.log(i);
+}
+
+console.log(sum);
+
+// ex 2
+const Laura = "Salut sunt Laura";
+let count = 0;
+
+for (let i = 0; i < Laura.length; i++) {
+  if (Laura[i] === "a") {
+    count++;
+  }
+}
+
+console.log(`Numarul de litere 'a' in string este: ${count}`);
+
+// ex 3
+let produsulNrIntregi = 1;
+
+for (let i = 1; i <= 5; i++) {
+  produsulNrIntregi *= i;
+}
+
+console.log(produsulNrIntregi);
+
+// ex 4
+
+function calculateCube(number) {
+  return number ** 3;
+}
+
+console.log(calculateCube(7));
+
+// ex 5
+
+function functieLitere(str, litera) {
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === litera) {
+      count++;
+    }
+  }
+  return count;
+}
+
+console.log(functieLitere("alune uscate", "e"));
+
+// ex 6
+
+function functieProdusNumar(num) {
+  let product = 1;
+
+  if (num <= 0) {
+    return "Numarul trebuie sa fie mai mic decat 0";
+  }
+
+  for (let i = 1; i <= num; i++) {
+    product *= i;
+  }
+
+  return product;
+}
+
+console.log(functieProdusNumar(5));
+
+// ex 7
+
+const arrayEx7 = ["Salut", 2, "Dacia", "salut"];
+
+function numarAparitii(array) {
+  let count = 0;
+
+  for (let i = 0; i < array.length; i++) {
+    if (typeof array[i] === "string" && array[i].toLowerCase() === "salut") {
+      count++;
+    }
+  }
+  return count;
+}
+
+console.log(numarAparitii(arrayEx7));
+
+// ex 8
+
+const arrayEx8 = [10, 20, 1, 2];
+
+function produslNr(array) {
+  let produs = 1;
+  for (let i = 0; i < array.length; i++) {
+    if (typeof array[i] === "number") {
+      produs *= array[i];
+    }
+  }
+  return produs;
+}
+
+console.log(produslNr(arrayEx8));
+
+// ex 9
+
+const arrayEx9 = ["baobab", "calculator"];
+
+function findTheLetter(array, e) {
+  let count = 0;
+  for (let i = 0; i < array.length; i++) {
+    if (typeof array[i] === "string") {
+      for (let j = 0; j < array[i].length; j++) {
+        if (array[i][j].toLowerCase() === e.toLowerCase()) {
+          count++;
+        }
+      }
+    }
+  }
+  return count;
+}
+
+// OR
+
+console.log(findTheLetter(arrayEx9, "a"));
+
+function findTheLetter2(array, e) {
+  let count = 0;
+
+  array.forEach((str) => {
+    if (typeof str === "string") {
+      for (let j = 0; j < str.length; j++) {
+        if (str[j].toLowerCase() === e.toLowerCase()) {
+          count++;
+        }
+      }
+    }
+  });
+  return count;
+}
+
+console.log(findTheLetter2(arrayEx9, "o"));
+
+// ex 10
+const arrrayEx10 = ["ALUNA", "PORSCHE"];
+
+function findTheWorld(str, word) {
+  return str.includes(word);
+}
+
+console.log(findTheWorld(arrrayEx10, "ALUNA"));
