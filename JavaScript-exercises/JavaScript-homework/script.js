@@ -340,6 +340,7 @@ console.log(produs);
 
 // ex 1
 
+/*
 let sum = 0;
 
 for (let i = 1; i <= 15; i += 2) {
@@ -490,3 +491,92 @@ function findTheWorld(str, word) {
 }
 
 console.log(findTheWorld(arrrayEx10, "ALUNA"));
+
+function operation(operation, value1, value2) {
+  switch (operation) {
+    case "+":
+      return value1 + value2;
+      break;
+    case "-":
+      return value1 - value2;
+      break;
+    case "*":
+      return value1 * value2;
+      break;
+    case "/":
+      return value1 / value2;
+      break;
+    default:
+      return 0;
+  }
+}
+
+console.log(operation("*", 10, 5));
+
+// Ex 1
+
+let array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+
+function numerePare(arr) {
+  let suma = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 == 0) {
+      suma += arr[i];
+    }
+  }
+  return suma;
+}
+
+console.log(numerePare(array1));
+
+const array2 = [1, 2];
+
+function existaSauNu(array, varibila) {
+  return array.includes(varibila);
+}
+
+console.log(existaSauNu(array2, 5));
+
+*/
+
+// Tema JS10
+
+//1
+const numereDivisibileCu2 = [1, 2, 3, 4, 5, 6, 7, 8];
+
+function filtreazaDivizibile(array, nr) {
+  const x = [];
+  array.forEach((element) => {
+    if (element % nr === 0) {
+      x.push(element);
+    }
+  });
+  return x;
+}
+
+console.log(filtreazaDivizibile(numereDivisibileCu2, 2));
+
+// ex 2
+const arrayMare = [1, 2, 3, 4, 5, 6, 7, 8];
+const arrayMic1 = [1, 2, 3];
+const arrayMic2 = [1, 2, 13];
+const arrayMic3 = [10, 13];
+
+function verficaIncluziuneArray(arrayMare, arrayMic) {
+  return arrayMic.every((element) => arrayMare.includes(element));
+}
+
+console.log(verficaIncluziuneArray(arrayMare, arrayMic1));
+console.log(verficaIncluziuneArray(arrayMare, arrayMic2));
+console.log(verficaIncluziuneArray(arrayMare, arrayMic3));
+
+// ex 3
+
+const arrayEx3 = [1, 2, 3, 4];
+
+function eliminaElement(array, element) {
+  const resultat = array.filter((e) => e !== element);
+  return resultat;
+}
+
+console.log(eliminaElement(arrayEx3, 4));
